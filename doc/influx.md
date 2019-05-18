@@ -1,5 +1,5 @@
 
-How to delete a specific organization
+[How to delete a specific organization](https://v2.docs.influxdata.com/v2.0/organizations/delete-org/)
 
 ```
 influx org find
