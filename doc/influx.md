@@ -37,3 +37,9 @@ influx write -b rick -o ag -p s 'weather,location=oregon temperature=45'
 influx write -b rick -o ag -p s 'weather,location=oregon temperature=47'
 influx write 'weather,location=oregon temperature=100'
 ```
+
+[Writing a data file](https://v2.docs.influxdata.com/v2.0/write-data/#example-influx-write-commands)
+
+```
+influx write -b rick -o ag -p s @./temp1.txt
+```

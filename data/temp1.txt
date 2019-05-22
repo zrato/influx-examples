@@ -1,0 +1,8 @@
+weather,location=oregon temperature=42
+weather,location=oregon temperature=45
+weather,location=oregon temperature=41
+weather,location=oregon temperature=39
+weather,location=oregon temperature=49
+weather,location=oregon temperature=45
+weather,location=oregon temperature=47
+weather,location=oregon temperature=100
