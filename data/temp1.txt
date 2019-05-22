@@ -1,8 +1,12 @@
-weather,location=oregon temperature=42
-weather,location=oregon temperature=45
-weather,location=oregon temperature=41
-weather,location=oregon temperature=39
-weather,location=oregon temperature=49
-weather,location=oregon temperature=45
-weather,location=oregon temperature=47
-weather,location=oregon temperature=100
+
+weather,location=oregon temperature=31 1558522186
+weather,location=oregon temperature=45 1558525178
+weather,location=oregon temperature=47 1558528780
+
+weather,location=oregon temperature=31 1558531186
+weather,location=oregon temperature=45 1558534178
+weather,location=oregon temperature=47 1558537780
+
+weather,location=oregon temperature=31 1558540186
+weather,location=oregon temperature=45 1558543178
+weather,location=oregon temperature=47 1558546780
