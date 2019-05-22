@@ -44,6 +44,8 @@ influx write 'weather,location=oregon temperature=100'
 influx write -b rick -o ag -p s @./temp1.txt
 ```
 
+[Here is a nice timestamp visualizer called EpochConverter](https://www.epochconverter.com/)
+
 Complete Sequence for Manual Testing
 
 ```
