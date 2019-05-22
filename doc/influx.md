@@ -28,4 +28,5 @@ influx write -b rick -o ag -p s 'weather,location=oregon temperature=39'
 influx write -b rick -o ag -p s 'weather,location=oregon temperature=49'
 influx write -b rick -o ag -p s 'weather,location=oregon temperature=45'
 influx write -b rick -o ag -p s 'weather,location=oregon temperature=47'
+influx write 'weather,location=oregon temperature=100'
 ```
