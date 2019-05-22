@@ -1,9 +1,12 @@
 
-[How to delete a specific organization](https://v2.docs.influxdata.com/v2.0/organizations/delete-org/)
+[Getting Started](https://github.com/influxdata/influxdb#getting-started)
 
 ```
 alias infsetup='influx setup --username storm --password 12345678 --org ag --bucket rick'
 ```
+
+
+[How to delete a specific organization](https://v2.docs.influxdata.com/v2.0/organizations/delete-org/)
 
 ```
 influx org find
