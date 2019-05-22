@@ -2,6 +2,10 @@
 [How to delete a specific organization](https://v2.docs.influxdata.com/v2.0/organizations/delete-org/)
 
 ```
+alias infsetup='influx setup --username storm --password 12345678 --org ag --bucket rick'
+```
+
+```
 influx org find
 influx org delete -i 03db76dc3b09b000
 ```
