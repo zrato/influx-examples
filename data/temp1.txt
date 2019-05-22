@@ -1,12 +1,12 @@
 
-weather,location=oregon temperature=31 1558522186
-weather,location=oregon temperature=45 1558525178
-weather,location=oregon temperature=47 1558528780
+weather,location=oregon temperature=31 1558522000
+weather,location=oregon temperature=45 1558525000
+weather,location=oregon temperature=47 1558528000
 
-weather,location=oregon temperature=31 1558531186
-weather,location=oregon temperature=45 1558534178
-weather,location=oregon temperature=47 1558537780
+weather,location=oregon temperature=31 1558531000
+weather,location=oregon temperature=45 1558534000
+weather,location=oregon temperature=47 1558537000
 
-weather,location=oregon temperature=31 1558540186
-weather,location=oregon temperature=45 1558543178
-weather,location=oregon temperature=47 1558546780
+weather,location=oregon temperature=31 1558540000
+weather,location=oregon temperature=45 1558543000
+weather,location=oregon temperature=47 1558546000

@@ -43,3 +43,13 @@ influx write 'weather,location=oregon temperature=100'
 ```
 influx write -b rick -o ag -p s @./temp1.txt
 ```
+
+Complete Sequence for Manual Testing
+
+```
+infclean
+influxd
+infsetup
+cd influxexamples/data
+inf100
+```
