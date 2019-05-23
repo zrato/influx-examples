@@ -11,6 +11,8 @@ Here is the doc on
 [CSV input data format](https://docs.influxdata.com/telegraf/v1.10/data_formats/input/csv/)
 with a simple example that works.
 
+### Equity Data Example
+
 This writes data to inflxdb with equity data...
 
 ```
