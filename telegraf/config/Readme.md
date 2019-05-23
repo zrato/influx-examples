@@ -13,7 +13,7 @@ with a simple example that works.
 
 ### Equity Data Example
 
-This writes data to inflxdb with equity data...
+This writes data to influxdb with equity data...
 
 ```
 telegraf --config ./ubnt.conf
