@@ -1,0 +1,4 @@
+measurement,cpu,time_user,time_system,time_idle,mytime
+cpu,cpu0,42,72,100,2019-05-24T03:03:28Z
+cpu,cpu1,52,82,200,2019-05-24T03:04:28Z
+cpu,cpu2,62,92,300,2019-05-24T03:05:28Z
