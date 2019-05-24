@@ -52,6 +52,21 @@ Complete Sequence for Manual Testing
 infclean
 influxd
 infsetup
+```
+
+To directly write data to influxdb
+
+```
 cd influxexamples/data
 inf100
 ```
+
+If you are using telegraph
+
+```
+exportenv
+```
+
+#### exportenv
+Export Influxdb Credentials File as an
+[Environment Variable](https://github.com/stormasm/go-examples/tree/master/filenv)
