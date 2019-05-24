@@ -61,12 +61,12 @@ cd influxexamples/data
 inf100
 ```
 
-If you are using telegraph
+If you are using telegraph you can exportenv also called infenv
 
 ```
-exportenv
+infenv
 ```
 
-#### exportenv
+#### infenv
 Export Influxdb Credentials File as an
 [Environment Variable](https://github.com/stormasm/go-examples/tree/master/filenv)
