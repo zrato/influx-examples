@@ -65,6 +65,7 @@ If you are using telegraph you can exportenv also called infenv
 
 ```
 infenv
+sp [or bring up a new terminal window]
 ```
 
 #### infenv

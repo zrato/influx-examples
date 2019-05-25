@@ -1,5 +1,8 @@
-myt1meas,value
-apple,1.0
-apple,2.0
-apple,3.0
-apple,4.0
+datetime,metric,kind,size
+20190523T16:03:55.266548,fruit,apple,5.1
+20190523T16:03:56.266697,fruit,peach,6.2
+20190523T16:04:56.266697,fruit,peach,5.8
+20190523T16:05:56.266697,fruit,peach,3.1
+20190523T17:05:56.266697,fruit,peach,1.1
+20190523T18:05:56.266697,fruit,apple,10.1
+20190523T19:05:56.266697,fruit,peach,12.1
