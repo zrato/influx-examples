@@ -1,4 +1,10 @@
-measurement,cpu,time_user,time_system,time_idle,mytime
-cpu,cpu0,42,72,100,2019-05-24T03:03:28Z
-cpu,cpu1,52,82,200,2019-05-24T03:04:28Z
-cpu,cpu2,62,92,300,2019-05-24T03:05:28Z
+metric,cpu,time_user,time_system,time_idle,mytime
+mycpu,cpu0,42,72,100,1558600456
+mycpu,cpu1,52,82,200,1558707123
+mycpu,cpu2,62,92,300,1558737730
+mycpu,cpu0,102,72,100,1558747456
+mycpu,cpu1,152,82,200,1558748123
+mycpu,cpu2,162,92,300,1558749730
+mycpu,cpu0,72,72,100,1558750456
+mycpu,cpu1,252,82,200,1558751123
+mycpu,cpu2,262,92,300,1558752730
