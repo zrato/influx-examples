@@ -1,3 +1,4 @@
 datetime,region,metric,size
-20190424T16:03:55.266548,west,country,309.4
-20190524T16:03:56.266697,east,country,162.5
+20190424T15:53:32,west,country,309.4
+20190506T05:40:12,east,country,162.5
+20190517T19:26:52,west,country,362.5
