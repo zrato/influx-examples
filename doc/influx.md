@@ -72,19 +72,43 @@ sp [or bring up a new terminal window]
 Export Influxdb Credentials File as an
 [Environment Variable](https://github.com/stormasm/go-examples/tree/master/filenv)
 
-[influxd generate](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/generate/)
+### Influxd Generate and Inspect Commands
+
+[influxd generate and inspect](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/)
+
+print to stdout all of the parameters
+```
+influxd generate simple --bucket rick --org ag --print
+```
 
 write out a sample file
 ```
 influxd generate simple --bucket rick --org ag
 ```
 
-write out all of the parameters
+In order for the command below to work you must go through the
+
 ```
-influxd generate simple --bucket rick --org ag --print
+infclean
+infd
+infsetup
+and then bring down infd
 ```
 
 write out a sample schema
 ```
-influxd generate help-schema
+influxd generate help-schema > myschema.toml
 ```
+
+Comment out the line
+```
+{ name = "rack", source = { type = "file", path = "files/racks.txt" } },
+```
+
+```
+infd generate myschema.toml --bucket rick --org ag
+```
+
+You can then go ahead and inspect the file...
+
+infd inspect report-tsm
