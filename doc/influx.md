@@ -71,3 +71,20 @@ sp [or bring up a new terminal window]
 #### infenv
 Export Influxdb Credentials File as an
 [Environment Variable](https://github.com/stormasm/go-examples/tree/master/filenv)
+
+####[influxd generate](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/generate/)
+
+write out a sample file
+```
+infd generate simple --bucket rick --org ag
+```
+
+write out all of the parameters
+```
+infd generate simple --bucket rick --org ag --print
+```
+
+write out a sample schema
+```
+infd generate help-schema
+```
