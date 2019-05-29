@@ -76,6 +76,15 @@ Export Influxdb Credentials File as an
 
 [influxd generate and inspect](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/)
 
+In order for the command below to work you must go through the
+
+```
+infclean
+infd
+infsetup
+and then bring down infd
+```
+
 print to stdout all of the parameters
 ```
 influxd generate simple --bucket rick --org ag --print
@@ -84,15 +93,6 @@ influxd generate simple --bucket rick --org ag --print
 write out a sample file
 ```
 influxd generate simple --bucket rick --org ag
-```
-
-In order for the command below to work you must go through the
-
-```
-infclean
-infd
-infsetup
-and then bring down infd
 ```
 
 write out a sample schema
