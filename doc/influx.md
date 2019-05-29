@@ -76,7 +76,7 @@ Export Influxdb Credentials File as an
 
 [influxd generate and inspect](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/)
 
-In order for the command below to work you must go through the
+In order for the commands below to work you must go through the
 
 ```
 infclean
@@ -111,4 +111,6 @@ infd generate myschema.toml --bucket rick --org ag
 
 You can then go ahead and inspect the file...
 
+```
 infd inspect report-tsm
+```
