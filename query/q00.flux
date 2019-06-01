@@ -1,3 +1,3 @@
 from(bucket: "rick")
-  |> range(start: -30d)
-  |> filter(fn: (r) => r._measurement == "mem")
+  |> range(start: -150m)
+  |> filter(fn: (r) => r._measurement == "origxa")
