@@ -1,0 +1,15 @@
+title = "Documented schema"
+
+# limit the maximum number of series generated across all measurements
+#
+
+[[measurements]]
+name = "hb"
+tags = [
+    { name = "region", source = ["us-west-01"] },
+]
+fields = [
+    # An example of a sequence of integer values
+    { name = "free",    count = 2, source = [10], time-precision = "s" },
+    { name = "low_mem", count = 2, source = [false], time-precision = "s" },
+]
