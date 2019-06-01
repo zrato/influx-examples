@@ -11,7 +11,7 @@ title = "Documented schema"
 # NOTE:
 # Multiple definitions of the same measurement name are allowed and
 # will be merged together.
-name = "cpu"
+name = "origxa"
 
 # sample: float; where 0 < sample ≤ 1.0 (default: 0.5)
 #   sample a subset of the tag set
@@ -154,7 +154,7 @@ fields = [
 
 # Multiple measurements may be defined.
 [[measurements]]
-name = "mem"
+name = "origxb"
 tags = [
     { name = "host",   source = { type = "sequence", format = "host-%s", start = 0, count = 5 } },
     { name = "region", source = ["us-west-01","us-west-02","us-east"] },
