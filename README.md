@@ -6,3 +6,5 @@
 [Line Protocol Tutorial](https://docs.influxdata.com/influxdb/v1.7/write_protocols/line_protocol_tutorial/)
 
 [CSV input data format](https://docs.influxdata.com/telegraf/v1.10/data_formats/input/csv/)
+
+ok1
