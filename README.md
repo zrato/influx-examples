@@ -7,4 +7,4 @@
 
 [CSV input data format](https://docs.influxdata.com/telegraf/v1.10/data_formats/input/csv/)
 
-ok1
+ok100
