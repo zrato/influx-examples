@@ -1,10 +1,33 @@
 
-[Getting Started](https://github.com/influxdata/influxdb#getting-started)
+Complete Sequence for Manual Testing
 
 ```
+infclean
+influxd
+infsetup
+```
+
+[You must then set the INFLUX_TOKEN](https://github.com/stormasm/go-examples/blob/master/filenv/Readme.md) prior to writing out data to influxdb.
+
+```
+infenv
+sp [or bring up a new terminal window]
+```
+
+To directly write data to influxdb set the most recent time in the data file
+below using the
+[EpochConverter](https://www.epochconverter.com/) to get the times.
+
+```
+cd influxexamples/data
+inf100
+alias inf100='influx write -b rick -o ag -p s @./temp1.txt'
+```
+
+```
+alias infclean='unset INFLUX_TOKEN; cd ~/.influxdbv2; rm -fr *'
 alias infsetup='influx setup --username storm --password 12345678 --org ag --bucket rick'
 ```
-
 
 [How to delete a specific organization](https://v2.docs.influxdata.com/v2.0/organizations/delete-org/)
 
@@ -45,32 +68,6 @@ influx write -b rick -o ag -p s @./temp1.txt
 ```
 
 [Here is a nice timestamp visualizer called EpochConverter](https://www.epochconverter.com/)
-
-Complete Sequence for Manual Testing
-
-```
-infclean
-influxd
-infsetup
-```
-
-To directly write data to influxdb
-
-```
-cd influxexamples/data
-inf100
-```
-
-If you are using telegraph you can exportenv also called infenv
-
-```
-infenv
-sp [or bring up a new terminal window]
-```
-
-#### infenv
-Export Influxdb Credentials File as an
-[Environment Variable](https://github.com/stormasm/go-examples/tree/master/filenv)
 
 ### Influxd Generate and Inspect Commands
 
