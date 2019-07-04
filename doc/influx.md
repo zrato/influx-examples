@@ -19,10 +19,10 @@ below using the
 [EpochConverter](https://www.epochconverter.com/) to get the times.
 
 ```
-cd influxexamples/data
-inf100
-alias inf100='influx write -b rick -o ag -p s @./temp1.txt'
+Go to the directory where the influxdb data file exists
 
+alias inf1='influx write -b rick -o ag -p s @./temp1.txt'
+alias infw='influx write -b rick -o ag -p s'
 This is a key point about how bash aliases work...
 
 infw @./t03.txt
@@ -30,7 +30,7 @@ infw @./t03.txt
 or you can use this syntax
 
 infw @t04.txt
-alias infw='influx write -b rick -o ag -p s'
+
 ```
 
 ```
