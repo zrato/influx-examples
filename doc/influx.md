@@ -26,6 +26,10 @@ alias inf100='influx write -b rick -o ag -p s @./temp1.txt'
 This is a key point about how bash aliases work...
 
 infw @./t03.txt
+
+or you can use this syntax
+
+infw @t04.txt
 alias infw='influx write -b rick -o ag -p s'
 ```
 
