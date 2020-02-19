@@ -3,7 +3,6 @@
 ##### Notes on tmpl
 
 ```
-at top level do a:
 rg tmpl
 ```
 
