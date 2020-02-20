@@ -1,10 +1,11 @@
 
 ### How to run e2e_test
 
-Point 1: The test only runs once, if you try to run it a second time
+**NOTE** The test only runs once, if you try to run it a second time
 with out bringing down the server and then bringing it back up it fails
 
 ```
+alias ie2e='influxd --e2e-testing --store=memory'
 influxd --e2e-testing --store=memory
 ```
 
@@ -138,3 +139,15 @@ You can then go ahead and inspect the file...
 ```
 infd inspect report-tsm
 ```
+
+### Alias Reference from .golang
+
+##### Aliases for Testing across all filenames in a directory
+
+alias gt='go test'
+alias gtv='gt -v'
+
+##### Aliases for Testing names of tests inside files
+
+alias gtr='go test -run'
+alias gtvr='gtv -run'
