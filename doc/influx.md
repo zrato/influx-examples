@@ -1,4 +1,22 @@
 
+### How to run e2e_test
+
+Point 1: The test only runs once, if you try to run it a second time
+with out bringing down the server and then bringing it back up it fails
+
+```
+influxd --e2e-testing --store=memory
+```
+
+##### On the client side run
+
+Inside the repo
+[influxdb-client-go](https://github.com/influxdata/influxdb-client-go)
+
+```
+gtvr TestE2E --e2e
+```
+
 Complete Sequence for Manual Testing
 
 ```
