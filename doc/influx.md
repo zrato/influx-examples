@@ -1,4 +1,18 @@
 
+##### Start up scenarios
+
+```
+gr cmd/influxd/main.go
+```
+
+##### Cmd Help
+
+```
+influxd generate help-schema
+```
+
+[More details here](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/generate/)
+
 ### How to run e2e_test
 
 **NOTE** The test only runs once, if you try to run it a second time
