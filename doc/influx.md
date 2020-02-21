@@ -157,10 +157,14 @@ infd inspect report-tsm
 
 aliases for testing across all filenames in a directory
 
+```
 alias gt='go test'
 alias gtv='gt -v'
+```
 
 aliases for testing names of tests inside files
 
+```
 alias gtr='go test -run'
 alias gtvr='gtv -run'
+```
