@@ -13,9 +13,9 @@ influxd generate help-schema
 
 [More details here](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/generate/)
 
-### How to run e2e_test
+##### How to run e2e_test
 
-**NOTE** The test only runs once, if you try to run it a second time
+**The test only runs once**, if you try to run it a second time
 with out bringing down the server and then bringing it back up it fails
 
 ```
@@ -153,14 +153,14 @@ You can then go ahead and inspect the file...
 infd inspect report-tsm
 ```
 
-### Alias Reference from .golang
+##### alias references from .golang
 
-##### Aliases for Testing across all filenames in a directory
+aliases for testing across all filenames in a directory
 
 alias gt='go test'
 alias gtv='gt -v'
 
-##### Aliases for Testing names of tests inside files
+aliases for testing names of tests inside files
 
 alias gtr='go test -run'
 alias gtvr='gtv -run'
