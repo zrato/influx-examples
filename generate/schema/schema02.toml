@@ -1,0 +1,11 @@
+title = "Documented schema"
+
+# limit the maximum number of series generated across all measurements
+#
+
+[[measurements]]
+name = "raton"
+fields = [
+    # An example of a sequence of integer values
+    { name = "free", count = 2, source = [3], time-precision = "s" },
+]
