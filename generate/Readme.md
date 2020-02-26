@@ -66,3 +66,16 @@ rg SeriesGenerator
 * cmd/influxd/generate
 * mock
 * storage/reads
+
+All writes to **tsdb** happens through generator.go which talks to internal/shard/writer.go
+
+```
+rg \/tsdb
+```
+
+And inside pkg/data/gen we have these references...
+
+* arrays.gen.go
+* values_sequence.gen.go
+* specs.go
+* merged_series_generator_test.go
