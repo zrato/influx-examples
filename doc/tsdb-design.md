@@ -1,5 +1,5 @@
 
-(link to this design doc)[https://github.com/influxdata/influxdb/blob/master/tsdb/tsm1/DESIGN.md]
+[link to this design doc](https://github.com/influxdata/influxdb/blob/master/tsdb/tsm1/DESIGN.md)
 
 # File Structure
 
