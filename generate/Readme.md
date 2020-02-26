@@ -63,6 +63,6 @@ rg \/data\/gen
 rg SeriesGenerator
 ```
 
-cmd/influxd/generate
-mock
-storage/reads
+* cmd/influxd/generate
+* mock
+* storage/reads
