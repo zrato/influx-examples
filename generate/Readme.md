@@ -1,4 +1,13 @@
 
+### Everything happens in specs.go visit
+
+Inside exec of command.go NewSeriesGeneratorFromSpec gets
+called and this is what drives the start of the **generator**
+
+```
+	sg := gen.NewSeriesGeneratorFromSpec(spec, tr)
+```
+
 [influxd generate](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/generate)
 
 The <schema.toml> files are located in the schema directory.
@@ -67,6 +76,8 @@ rg SeriesGenerator
 * mock
 * storage/reads
 
+### Tsdb Notes
+
 All writes to **tsdb** happens through generator.go which talks to internal/shard/writer.go
 
 ```
@@ -79,3 +90,12 @@ And inside pkg/data/gen we have these references...
 * values_sequence.gen.go
 * specs.go
 * merged_series_generator_test.go
+
+##### Besides pkg/data/gen tsdb is globally referenced here...
+
+* cmd/influxd
+* gather
+* mock
+* predicate
+* query
+* storage
