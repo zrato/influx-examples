@@ -1,0 +1,14 @@
+title = "Documented schema"
+
+# Multiple measurements may be defined.
+[[measurements]]
+name = "origxb"
+tags = [
+    { name = "host",   source = { type = "sequence", format = "host-%s", start = 0, count = 5 } },
+    { name = "region", source = ["us-west-01","us-west-02","us-east"] },
+]
+fields = [
+    # An example of a sequence of integer values
+    { name = "free",    count = 100, source = [10,15,20,25,30,35,30], time-precision = "ms" },
+    { name = "low_mem", count = 100, source = [false,true,true], time-precision = "ms" },
+]
