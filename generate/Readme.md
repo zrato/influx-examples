@@ -6,9 +6,10 @@ influxd generate simple --help
 infdgen help-schema
 infdgen simple --print
 infdgen simple
-infdgen simple --t=1,1,1
-infdgen simple --t=1,1,1 --p=15
-infdgen simple --t=2,1,1 --p=5
+infdgen simple --clean all --t=1,1,1 --p=5
+infdgen simple --clean all --t=1,2,1 --p=5
+infdgen simple --clean all --t=1,2,2 --p=5
+infdgen simple --clean all --t=2,2,2 --p=5
 ```
 
 ----------------------------------
