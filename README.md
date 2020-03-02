@@ -9,8 +9,8 @@ the number of series keys in a dataset is the cardinality
 cardinality defined at just over nine minutes...   
 https://www.youtube.com/watch?v=8dOZGnSwKmo
 
-[Ref 1](./generate/Readme.md)
-[Ref 2](./doc/influx.md)
+[Ref 1](./generate/Readme.md)   
+[Ref 2](./doc/influx.md)   
 
 ### Line Protocol References
 
