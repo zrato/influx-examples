@@ -31,10 +31,17 @@ Inside the repo
 gtvr TestE2E --e2e
 ```
 
-Complete Sequence for Manual Testing
+To clean out just the data but not the credentials
 
 ```
 infclean
+```
+
+Complete Sequence for Manual Testing
+
+```
+cd .influxdbv2
+rm -fr *
 influxd
 infsetup
 ```
