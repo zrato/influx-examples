@@ -1,17 +1,16 @@
 
 start at 7:30
 
-series key = measurement, tags (key and value), field key
-point = series key, field value, timestamp
+series key = measurement, tags (key and value), field key   
+point = series key, field value, timestamp   
 
-the number of series keys in a dataset is the cardinality
+the number of series keys in a dataset is the cardinality   
 
-cardinality defined at just over nine minutes...
+cardinality defined at just over nine minutes...   
 https://www.youtube.com/watch?v=8dOZGnSwKmo
 
-
-
-[Read this first](./doc/influx.md)
+[Ref 1](./generate/Readme.md)
+[Ref 2](./doc/influx.md)
 
 ### Line Protocol References
 
