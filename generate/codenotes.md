@@ -106,3 +106,27 @@ And inside pkg/data/gen we have these references...
 * predicate
 * query
 * storage
+
+### Tsm1 Notes
+
+tsm1 is not found or referenced anywhere in the tsdb package
+
+```
+rg tsm1 *.go
+```
+
+### Tsi1 Notes
+
+tsi1 is only found in one place in the tsdb package and that is index_test.go
+
+```
+rg tsi1 *.go
+```
+
+```
+rg \/tsdb\/tsi1
+```
+
+tsi1 is called mainly in storage and cmd and...
+
+tsdb/tsm1/engine.go
