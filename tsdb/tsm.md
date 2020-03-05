@@ -1,13 +1,4 @@
 
-
-### storage package
-
-storage.NewEngine
-
-```
-rg 'storage\.NewEngine'
-```
-
 tsdb/series_file.go
 Opening Series File
 
