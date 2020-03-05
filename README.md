@@ -1,4 +1,6 @@
 
+[Back from Ashland Projects](./misc/projects.md)
+
 start at 7:30
 
 series key = measurement, tags (key and value), field key   
