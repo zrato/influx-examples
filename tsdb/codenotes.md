@@ -1,27 +1,27 @@
 
-### Tsdb Notes
 
-All writes to **tsdb** happens through generator.go which talks to internal/shard/writer.go
+### storage package
+
+storage.NewEngine
 
 ```
-rg \/tsdb
+rg 'storage\.NewEngine'
 ```
 
-And inside pkg/data/gen we have these references...
+tsdb/series_file.go
+Opening Series File
 
-* arrays.gen.go
-* values_sequence.gen.go
-* specs.go
-* merged_series_generator_test.go
+See here specifically to storage...
 
-##### Besides pkg/data/gen tsdb is globally referenced here...
+rg \/tsm1 *.go
+config.go
+engine.go
+retention.go
 
-* cmd/influxd
-* gather
-* mock
-* predicate
-* query
-* storage
+rg \/tsi1 *.go
+config.go
+engine.go
+series_cursor.go
 
 ### Tsm1 Notes
 
@@ -31,6 +31,7 @@ tsm1 is not found or referenced anywhere in the tsdb package
 rg tsm1 *.go
 ```
 
+Tsm1 is primarily referenced from the storage package.
 These are the core locations of who referenes tsm1
 
 storage/config.go
@@ -55,25 +56,26 @@ tsdb/tsm1/engine.go
 
 No reference to the SeriesFile inside the tsm1.
 
-### storage package
+# Tsdb Notes on cmd/influxd/generate
 
-storage.NewEngine
+All writes to **tsdb** happens through generator.go which talks to internal/shard/writer.go
 
 ```
-rg 'storage\.NewEngine'
+rg \/tsdb
 ```
 
-tsdb/series_file.go
-Opening Series File
+And inside pkg/data/gen we have these references...
 
-See here specifically to storage...
+* arrays.gen.go
+* values_sequence.gen.go
+* specs.go
+* merged_series_generator_test.go
 
-rg \/tsm1 *.go
-config.go
-engine.go
-retention.go
+##### Besides pkg/data/gen tsdb is globally referenced here...
 
-rg \/tsi1 *.go
-config.go
-engine.go
-series_cursor.go
+* cmd/influxd
+* gather
+* mock
+* predicate
+* query
+* storage
