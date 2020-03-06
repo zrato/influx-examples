@@ -19,7 +19,8 @@ influxd generate help-schema
 with out bringing down the server and then bringing it back up it fails
 
 ```
-alias ie2e='influxd --e2e-testing --store=memory'
+alias ie2e='gr cmd/influxd/main.go --e2e-testing --store=memory'
+alias ie2ec='influxd --e2e-testing --store=memory'
 ```
 
 ##### On the client side run
