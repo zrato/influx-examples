@@ -2,16 +2,8 @@
 ##### Start up scenarios
 
 ```
-gr cmd/influxd/main.go
+alias igr='cmd/influxd/main.go'
 ```
-
-##### Cmd Help
-
-```
-influxd generate help-schema
-```
-
-[More details here](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/generate/)
 
 ##### How to run e2e_test
 
@@ -176,3 +168,11 @@ aliases for testing names of tests inside files
 alias gtr='go test -run'
 alias gtvr='gtv -run'
 ```
+
+##### Cmd Help
+
+```
+influxd generate help-schema
+```
+
+[More details here](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/generate/)
