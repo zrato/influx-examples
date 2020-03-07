@@ -11,3 +11,9 @@ version of firing up a
 ##### NewEngine
 
 So this is a good starting point upon return home from Ashland...
+
+#### Understand and pick one service to dive into and all of the associated code
+
+```
+rg BucketService
+```
