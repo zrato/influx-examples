@@ -1,7 +1,7 @@
 
 #### Working Builds from Scratch
 
-March 14, 2020   [stormabq](https://github.com/stormabq/influxdb)
+03/14/2020   [stormabq](https://github.com/stormabq/influxdb)
 
 [Back from Ashland Projects](./misc/projects.md)
 
