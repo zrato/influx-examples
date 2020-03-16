@@ -1,8 +1,8 @@
 
 #### Working Builds from Scratch
 
-This was a fork of [my PR](https://github.com/influxdata/influxdb/commit/4c1e682117de6e90f4fcef66ddee09c26da5821a)
-02/25/2020   [stormalone](https://github.com/stormalone/influxdb/tree/remove-tsdb-dependency)
+This was a fork of [my PR](https://github.com/influxdata/influxdb/commit/4c1e682117de6e90f4fcef66ddee09c26da5821a)   
+02/25/2020   [stormalone](https://github.com/stormalone/influxdb/tree/remove-tsdb-dependency)   
 03/14/2020   [stormabq](https://github.com/stormabq/influxdb)
 
 [Back from Ashland Projects](./misc/projects.md)
