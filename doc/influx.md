@@ -39,12 +39,6 @@ To trigger it do your standard command
 sp
 ```
 
-In the code if you want to see where Token data gets read do a
-```
-rg Token
-```
-in the cmd directory
-
 ##### Talks about creating your new token from scratch
 
 https://github.com/influxdata/influxdb#getting-started
@@ -242,3 +236,9 @@ influxd generate help-schema
 ```
 
 [More details here](https://v2.docs.influxdata.com/v2.0/reference/cli/influxd/generate/)
+
+In the code if you want to see where Token data gets read do a
+```
+rg Token
+```
+in the cmd directory
