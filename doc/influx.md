@@ -1,5 +1,5 @@
 
-In .influxdbv2 there is a credentials file which looks like this
+In .influxdbv2 there is a **credentials** file which looks like this
 
 ```
 7pOQF90FzHQPFQcu77gRV9SUDWXaB4wqU_8K_zA0lAQg7GxyE5JLHV9brZrAae3drj1T64dFjC3iqfL5eQ_tLA=
