@@ -1,4 +1,26 @@
 
+To clean out just the data but not the credentials
+
+```
+alias infclean='cd ~/.influxdbv2; rm -fr engine'
+```
+
+And then you can get in there and write out new data
+
+```
+alias infw='influx write -b rick -o ag -p s'
+infw @filename.txt
+```
+
+Complete Sequence for Manual Testing
+
+```
+cd .influxdbv2
+rm -fr *
+influxd
+infsetup
+```
+
 In the code if you want to see where Token data gets read do a
 ```
 rg Token
@@ -15,22 +37,26 @@ https://v2.docs.influxdata.com/v2.0/write-data/use-telegraf/manual-config/
 
 https://v2.docs.influxdata.com/v2.0/security/tokens/view-tokens/
 
-In .influxdbv2 there is a **credentials** file which looks like this
+In .influxdbv2 there is a **config** file which looks like this
 
 ```
-7pOQF90FzHQPFQcu77gRV9SUDWXaB4wqU_8K_zA0lAQg7GxyE5JLHV9brZrAae3drj1T64dFjC3iqfL5eQ_tLA=
+[default]
+  url = "http://localhost:9999"
+  token = "ieL6P0KeyZ_DKlxGQiv1VSZELOolY8ISSFVqZX8uw5e-eBolJdnlCUiByAVjoZety-EQPTkaAGveKo-aHjK03Q=="
+  org = "ag"
+  active = true
 ```
 
 ```
 env | grep INFLUX
-INFLUX_TOKEN=7pOQF90FzHQPFQcu77gRV9SUDWXaB4wqU_8K_zA0lAQg7GxyE5JLHV9brZrAae3drj1T64dFjC3iqfL5eQ_tLA==
+INFLUX_TOKEN=ieL6P0KeyZ_DKlxGQiv1VSZELOolY8ISSFVqZX8uw5e-eBolJdnlCUiByAVjoZety-EQPTkaAGveKo-aHjK03Q==
 ```
 
 ```
 cat .influxenv
 produces the following result...
 
-export INFLUX_TOKEN=7pOQF90FzHQPFQcu77gRV9SUDWXaB4wqU_8K_zA0lAQg7GxyE5JLHV9brZrAae3drj1T64dFjC3iqfL5eQ_tLA==
+export INFLUX_TOKEN=ieL6P0KeyZ_DKlxGQiv1VSZELOolY8ISSFVqZX8uw5e-eBolJdnlCUiByAVjoZety-EQPTkaAGveKo-aHjK03Q==
 ```
 
 which is sourced inside .profile at the end of the file...
@@ -71,27 +97,7 @@ Inside the repo
 gtvr TestE2E --e2e
 ```
 
-To clean out just the data but not the credentials
-
-```
-infclean
-```
-
-Complete Sequence for Manual Testing
-
-```
-cd .influxdbv2
-rm -fr *
-influxd
-infsetup
-```
-
 [You must then set the INFLUX_TOKEN](https://github.com/stormasm/go-examples/blob/master/filenv/Readme.md) prior to writing out data to influxdb.
-
-```
-infenv
-sp [or bring up a new terminal window]
-```
 
 To directly write data to influxdb set the most recent time in the data file
 below using the
@@ -110,11 +116,6 @@ or you can use this syntax
 
 infw @t04.txt
 
-```
-
-```
-alias infclean='unset INFLUX_TOKEN; cd ~/.influxdbv2; rm -fr *'
-alias infsetup='influx setup --username storm --password 12345678 --org ag --bucket rick'
 ```
 
 [How to delete a specific organization](https://v2.docs.influxdata.com/v2.0/organizations/delete-org/)
