@@ -21,6 +21,10 @@ influxd
 infsetup
 ```
 
+```
+alias infsetup='influx setup --username storm --password jjjjjjjj --org ag --bucket rick'
+```
+
 In the code if you want to see where Token data gets read do a
 ```
 rg Token
