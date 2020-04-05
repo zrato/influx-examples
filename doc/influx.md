@@ -25,6 +25,20 @@ infsetup
 alias infsetup='influx setup --username storm --password jjjjjjjj --org ag --bucket rick'
 ```
 
+You must then populate the filename **.influxenv** with this line of code...
+
+```
+export INFLUX_TOKEN=ieL6P0KeyZ_DKlxGQiv1VSZELOolY8ISSFVqZX8uw5e-eBolJdnlCUiByAVjoZety-EQPTkaAGveKo-aHjK03Q==
+```
+
+This file then gets sourced at the end of .profile
+
+To trigger it do your standard command
+
+```
+sp
+```
+
 In the code if you want to see where Token data gets read do a
 ```
 rg Token
