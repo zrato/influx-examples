@@ -1,4 +1,20 @@
 
+In the code if you want to see where Token data gets read do a
+```
+rg Token
+```
+in the cmd directory
+
+##### Talks about creating your new token from scratch
+
+https://github.com/influxdata/influxdb#getting-started
+
+##### References
+
+https://v2.docs.influxdata.com/v2.0/write-data/use-telegraf/manual-config/
+
+https://v2.docs.influxdata.com/v2.0/security/tokens/view-tokens/
+
 In .influxdbv2 there is a **credentials** file which looks like this
 
 ```
@@ -19,8 +35,9 @@ export INFLUX_TOKEN=7pOQF90FzHQPFQcu77gRV9SUDWXaB4wqU_8K_zA0lAQg7GxyE5JLHV9brZrA
 
 which is sourced inside .profile at the end of the file...
 
-And I am assuming that this token data is also located somewhere
-inside the file ~/.influxdbv2/influxd.bolt
+Do not delete the influxd.bolt file because   
+the organization and bucket information is stored inside the file   
+~/.influxdbv2/influxd.bolt
 
 so unless you want to go through this whole dance again...   
 simply execute the command **infclean**
