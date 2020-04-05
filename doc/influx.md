@@ -1,4 +1,34 @@
 
+In .influxdbv2 there is a credentials file which looks like this
+
+```
+7pOQF90FzHQPFQcu77gRV9SUDWXaB4wqU_8K_zA0lAQg7GxyE5JLHV9brZrAae3drj1T64dFjC3iqfL5eQ_tLA=
+```
+
+```
+env | grep INFLUX
+INFLUX_TOKEN=7pOQF90FzHQPFQcu77gRV9SUDWXaB4wqU_8K_zA0lAQg7GxyE5JLHV9brZrAae3drj1T64dFjC3iqfL5eQ_tLA==
+```
+
+```
+cat .influxenv
+produces the following result...
+
+export INFLUX_TOKEN=7pOQF90FzHQPFQcu77gRV9SUDWXaB4wqU_8K_zA0lAQg7GxyE5JLHV9brZrAae3drj1T64dFjC3iqfL5eQ_tLA==
+```
+
+which is sourced inside .profile at the end of the file...
+
+And I am assuming that this token data is also located somewhere
+inside the file ~/.influxdbv2/influxd.bolt
+
+so unless you want to go through this whole dance again...   
+simply execute the command **infclean**
+
+```
+alias infclean='cd ~/.influxdbv2; rm -fr engine'
+```
+
 ##### Start up scenarios
 
 ```
