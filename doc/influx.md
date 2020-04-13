@@ -87,7 +87,7 @@ alias infclean='cd ~/.influxdbv2; rm -fr engine'
 ##### Start up scenarios
 
 ```
-alias igr='cmd/influxd/main.go'
+alias igr='gr cmd/influxd/main.go'
 ```
 
 ##### How to run e2e_test
